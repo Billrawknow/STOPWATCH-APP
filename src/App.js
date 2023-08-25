@@ -76,6 +76,7 @@ const [stopwatchData, setStopwatchData] = useState([
       <button className={"control-buttons"} onClick={() => handleStop(stopwatchData[selectedRow].id)}>Stop</button>
       <button className={"control-buttons"} onClick={() => handleReset(stopwatchData[selectedRow].id)}>Reset</button>
      </div>
+     
      <p className='lap-label'>Laps</p>
      <div className='lap-container'>
       {stopwatchData[selectedRow]?.lap.length > 0 && stopwatchData[selectedRow]?.lap.map((lap, index) => (
